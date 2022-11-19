@@ -127,7 +127,7 @@
             </div>
             <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" id="super-search-fm">
                 <input type="text" id="search-text" placeholder="百度一下" style="outline:0" autocomplete="off">
-                <button class="submit" type="submit"><svg style="width: 20px; height: 20px; margin:7px 0; color: #29f;" class="icon" aria-hidden="true">
+                <button class="submit" type="submit" id="type-sousuo"><svg style="width: 20px; height: 20px; margin:7px 0; color: #29f;" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-sousuo"></use>
                     </svg><span></button>
                 <ul id="word" style="display: none;"></ul>
@@ -143,41 +143,41 @@
             <li class="title"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-shipin"></use>
                 </svg> 影视娱乐</li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.iqiyi.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1" id="aiqiyi"><a rel="nofollow" href="https://www.iqiyi.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-aiqiyi"></use>
                 </svg><span>爱奇艺</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://v.qq.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1" id="tengxunshipin"></li>><a rel="nofollow" href="https://v.qq.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-tengxunshipin"></use>
                 </svg><span>腾讯视频</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.youku.com" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="youku"><a rel="nofollow" href="https://www.youku.com" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-youku"></use>
                 </svg><span>优酷</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ddys.tv/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1" id="ddys"><a rel="nofollow" href="https://ddys.tv/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-ddys"></use>
                 </svg><span>低端影视</span></a></li>
-        <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://cupfox.app/" target="_blank"><svg class="icon" aria-hidden="true">
+        <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="chabeihu"><a rel="nofollow" href="https://cupfox.app/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-hulinew"></use>
                 </svg><span>茶杯狐</span></a></li>
 
-        <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.nfyingshi.com/" target="_blank"><svg class="icon" aria-hidden="true">
+        <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="netflix"><a rel="nofollow" href="https://www.nfyingshi.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-netflix"></use>
                 </svg><span>奈非影视</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.libvio.me/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="libvio"><a rel="nofollow" href="https://www.libvio.me/" target="_blank"><svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-libvio"></use>
                     </svg><span>Libvio</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.bugutv.net/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="buguTV"><a rel="nofollow" href="https://www.bugutv.net/" target="_blank"><svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-buguTV"></use>
                     </svg><span>布谷TV</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="bili"></li>><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-bili"></use>
             </svg><span>哔哩哔哩</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.yinghuacd.com/top/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="yinghuadongman"><a rel="nofollow" href="http://www.yinghuacd.com/top/" target="_blank"><svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-dongman"></use>
             </svg><span>樱花动漫</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.ikanbot.com/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="ikanbot"><a rel="nofollow" href="https://www.ikanbot.com/" target="_blank"><svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-ikanbot"></use>
             </svg><span>爱看机器人</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.daofire.com/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="daohuojilupian"><a rel="nofollow" href="http://www.daofire.com/" target="_blank"><svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-iconfont"></use>
             </svg><span>盗火记录片</span></a></li>
             <!-- <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://xdeafnn4.jutuike.cn/#/pages/digital/index?code=xdeafnN4" target="_blank"><svg class="icon" aria-hidden="true">
@@ -194,28 +194,28 @@
             <li class="title"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-dushu"></use>
                 </svg> 图书阅读</li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://sobooks.net/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="wdxsw"><a rel="nofollow" href="https://sobooks.net/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-wdxsw"></use>
                 </svg><span>我的小书屋</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.jiumodiary.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="jmsoshu"><a rel="nofollow" href="https://www.jiumodiary.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-jmsoshu"></use>
                 </svg><span>鸠摩搜书</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.ooopn.com/tool/zlibrary/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="ZLibrary"><a rel="nofollow" href="https://www.ooopn.com/tool/zlibrary/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-ZLibrary"></use>
                 </svg><span>ZLibrary</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.baoshuxuan.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="baoshuwang"><a rel="nofollow" href="https://www.baoshuxuan.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-baoshuwang"></use>
                 </svg><span>宝书网</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://weread.qq.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="weixindushu"><a rel="nofollow" href="https://weread.qq.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-weixindushu"></use>
                 </svg><span>微信读书</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://weread.qq.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"    id="dashumanhua"><a rel="nofollow" href="https://weread.qq.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-dashumanhua"></use>
                 </svg><span>大树漫画</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.soman.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"    id="manhuamao"><a rel="nofollow" href="https://www.soman.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-manhuamao"></use>
                 </svg><span>搜漫</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://convertio.co/zh/epub-mobi/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="zhuanhuan"><a rel="nofollow" href="https://convertio.co/zh/epub-mobi/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-zhuanhuan"></use>
                 </svg><span>在线格式转换</span></a></li>
         </ul>
@@ -227,16 +227,16 @@
             <li class="title"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-wangpan"></use>
                 </svg>网盘搜索</li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.upyunso.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="upso"><a rel="nofollow" href="https://www.upyunso.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-upso"></use>
                 </svg><span>up云搜</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://dapanso.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="daliso"><a rel="nofollow" href="https://dapanso.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-daliso"></use>
                 </svg><span>大力盘</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.dashengpan.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="dashengso"><a rel="nofollow" href="https://www.dashengpan.com/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-dashengso"></use>
                 </svg><span>大圣盘搜</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://jihepan.top/ target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="jiheso"><a rel="nofollow" href="https://jihepan.top/ target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-jiheso"></use>
                 </svg><span>鸡盒盘搜</span></a></li>
              
@@ -246,26 +246,26 @@
             <li class="title"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-tool"></use>
                 </svg>实用工具</li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://pyq.jzzz66.cn/about.html" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="pengyoujizan" ><a rel="nofollow" href="https://pyq.jzzz66.cn/about.html" target="_blank"><svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-pengyoujizan"></use>
                     </svg><span>朋友圈集赞神器</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://wantwords.net/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="fanxingzidian" ><a rel="nofollow" href="https://wantwords.net/" target="_blank"><svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-fanxingzidian"></use>
                     </svg><span>清华反向词典</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://jikipedia.com/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="dashengso" ><a rel="nofollow" href="https://jikipedia.com/" target="_blank"><svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-xiaojizidian"></use>
                     </svg><span>小鸡词典</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.mdnice.com/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="paiban"><a rel="nofollow" href="https://www.mdnice.com/" target="_blank"><svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-paiban"></use>
                     </svg><span>微信排版神器</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://suulnnka.github.io/BullshitGenerator/index.html" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="goupi" ><a rel="nofollow" href="https://suulnnka.github.io/BullshitGenerator/index.html" target="_blank"><svg class="icon" aria-hidden="true">
                         <use xlink:href="#icon-goupi"></use>
                     </svg><span>狗屁不通文章生成器</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://jts.egg404.cn/#/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="zuoye" ><a rel="nofollow" href="https://jts.egg404.cn/#/" target="_blank"><svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-zuoye"></use>
             </svg><span>检讨书生成器</span></a></li>
 
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.yikm.net/" target="_blank"><svg class="icon" aria-hidden="true">
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="youxi" ><a rel="nofollow" href="https://www.yikm.net/" target="_blank"><svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-youxi"></use>
             </svg><span>在线小霸王</span></a></li>
 
@@ -275,25 +275,25 @@
             <li class="title"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-hot"></use>
                 </svg>热榜</li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://s.click.taobao.com/t?union_lens=lensId%3AOPT%401668775918%40212a8d81_0a1d_1848acbbc0c_72af%4001%3BeventPageId%3A20150318020008866&e=m%3D2%26s%3Da%2ByvK8DdOrRw4vFB6t2Z2iperVdZeJviU%2F9%2F0taeK29yINtkUhsv0Nlexd4840wHwVKLpnfV7hkEJKPxwabcXaOZtmyDv2FP%2Box%2F3tO%2FEWDq49RP4ta%2BMqIH3PVIRyNJSmiZbkmQQlaOTe7uzUz56b4H8lVVAG5MwmwBo7yXhWIb83onHli60zO5MaXTjVACoLX%2FCOfRpo%2B1jhC3ZxnWVd3h59eK1tTwVJYMd46AcoUg6jFpPDBuq0gIPsEFBJAt7YnTG6SG9ALNUR9TbSVKMizFfId7PqxpwiQJmsGOgU2KdyWHQssJcoQGmaKKazcVk2s3tuU7r0Z1L%2BQuYAHUrAWCRxhV0R3s9Q1bZHggjo9h6jxVrJWb866gDYvox5dxGWuT0Akgen9gYh%2Bm7jOlA1x41hpg5g1APuUKMILxyTw%3D" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="taobao"  ><a rel="nofollow" href="https://s.click.taobao.com/t?union_lens=lensId%3AOPT%401668775918%40212a8d81_0a1d_1848acbbc0c_72af%4001%3BeventPageId%3A20150318020008866&e=m%3D2%26s%3Da%2ByvK8DdOrRw4vFB6t2Z2iperVdZeJviU%2F9%2F0taeK29yINtkUhsv0Nlexd4840wHwVKLpnfV7hkEJKPxwabcXaOZtmyDv2FP%2Box%2F3tO%2FEWDq49RP4ta%2BMqIH3PVIRyNJSmiZbkmQQlaOTe7uzUz56b4H8lVVAG5MwmwBo7yXhWIb83onHli60zO5MaXTjVACoLX%2FCOfRpo%2B1jhC3ZxnWVd3h59eK1tTwVJYMd46AcoUg6jFpPDBuq0gIPsEFBJAt7YnTG6SG9ALNUR9TbSVKMizFfId7PqxpwiQJmsGOgU2KdyWHQssJcoQGmaKKazcVk2s3tuU7r0Z1L%2BQuYAHUrAWCRxhV0R3s9Q1bZHggjo9h6jxVrJWb866gDYvox5dxGWuT0Akgen9gYh%2Bm7jOlA1x41hpg5g1APuUKMILxyTw%3D" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-taobao"></use>
                 </svg><span>淘宝热榜</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BANgJK1olXDYDZBoCUBVIMzZNXhpXVhgcDwYCXhxDXHBTTkRHA1ocDBsJVEVTbT9aXjVUUUJdDAACFBtFRjdPQx5dSkJdDAACZgpHVTtmQw4ZXgYBVFhtWBwXRBBJYwxwLUZ7UgBaQwxMUWlLTVcZbQMCVV9VD00QBmg4GFoXXAIBVlxYCXsnA2w4UDUUbQQCVV9dCU0UB2Y4G1wSVAAEUFlfD0wXCl8PG1IlBlNsU1laCR4XUTsOHgkcWDYyZF1tD0seF2l6WgkBW3QyZF1dOEgnM20JGl8cbTY" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="jingdong"  ><a rel="nofollow" href="https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BANgJK1olXDYDZBoCUBVIMzZNXhpXVhgcDwYCXhxDXHBTTkRHA1ocDBsJVEVTbT9aXjVUUUJdDAACFBtFRjdPQx5dSkJdDAACZgpHVTtmQw4ZXgYBVFhtWBwXRBBJYwxwLUZ7UgBaQwxMUWlLTVcZbQMCVV9VD00QBmg4GFoXXAIBVlxYCXsnA2w4UDUUbQQCVV9dCU0UB2Y4G1wSVAAEUFlfD0wXCl8PG1IlBlNsU1laCR4XUTsOHgkcWDYyZF1tD0seF2l6WgkBW3QyZF1dOEgnM20JGl8cbTY" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-jingdong"></use>
                 </svg><span>京东热榜</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://mobile.yangkeduo.com/duo_today_burst.html?pid=35363671_254839777&cpsSign=CM_221118_35363671_254839777_1a35f655f11d33d616f4be9c8746d656&_x_ddjb_act=%7B%22st%22%3A%223%22%7D&duoduo_type=2" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="pinduoduo" ><a rel="nofollow" href="https://mobile.yangkeduo.com/duo_today_burst.html?pid=35363671_254839777&cpsSign=CM_221118_35363671_254839777_1a35f655f11d33d616f4be9c8746d656&_x_ddjb_act=%7B%22st%22%3A%223%22%7D&duoduo_type=2" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-pinduoduo"></use>
                 </svg><span>拼多多热榜</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.bilibili.com/v/popular/all/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="bilibili-hot" ><a rel="nofollow" href="https://www.bilibili.com/v/popular/all/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-bilibili"></use>
                 </svg><span>哔哩哔哩热榜</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.zhihu.com/knowledge-plan/hot-question/hot/0/day" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="zhihu" ><a rel="nofollow" href="https://www.zhihu.com/knowledge-plan/hot-question/hot/0/day" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-zhihu"></use>
                 </svg><span>知乎热榜</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://weibo.com/a/hot/realtime" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="weibo" ><a rel="nofollow" href="https://weibo.com/a/hot/realtime" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-weibo"></use>
                 </svg><span>微博热榜</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.thepaper.cn/" target="_blank"><svg class="icon" aria-hidden="true">
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="newspaper" href="https://www.thepaper.cn/" target="_blank"><svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-newspaper"></use>
                 </svg><span>澎湃热榜</span></a></li>
         </ul>
