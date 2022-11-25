@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>搜券模式</title>
+    <title>OneForAll</title>
     <link rel="apple-touch-icon-precomposed" href="titleIcon.svg" />
     <meta name="msapplication-TileImage" content="titleIcon.svg" />
     <link rel="shortcut icon" href="titleIcon.svg" />
@@ -23,19 +23,18 @@
     <link rel="stylesheet" id="font-awesome-css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css?ver=1.1422" type="text/css" media="all">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://at.alicdn.com/t/font_1230786_ewprpwrczvj.js"></script>
-    <script src="https://at.alicdn.com/t/c/font_3781856_tm5w5jotii.js"></script>
+    <script src="https://at.alicdn.com/t/c/font_3778090_86hz61qhq19.js"></script>
     <script src="sou.js"></script>
     <link rel='stylesheet' href='style.css'>
     <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?79e2bc6e026ea659bfa792d132220da4";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
-
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?368c125fe9d8e888d99682879d143f46";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
         
 </head>
 
@@ -118,14 +117,17 @@
             <div id="search-list" class="hide-type-list">
                 <div class="search-group group-a s-current" style="padding-left: 20px">
                     <ul class="search-type">
-                        <li><input checked="" hidden="" type="radio"  name="type" id="type-quan" value="https://xdeafnn4.jutuike.cn/#/pages/shop/shop?code=xdeafnN4&" data-placeholder="输入购物关键字搜券"><label for="type-quan"><span style="color:#ff5722">搜券模式</span></label></li>
-                        <li><input hidden="" type="radio" onclick="if (this.checked){window.location='https://10fen.netlify.app/'}" name="type" id="type-origin" value="" data-placeholder="还原ing..."><label for="type-origin"><span style="color:#ec4c2c">回到导航页</span></label></li>
+                        <li><input checked="" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下"><label for="type-baidu"><span style="color:#2100E0">百度</span></label></li>
+                        <li><input hidden="" type="radio" name="type" id="type-google" value="https://search.njau.cf/search?q=" data-placeholder="谷歌搜索(可用，你试试)"><label for="type-google"><span style="color:#3B83FA">G</span><span style="color:#F3442C">o</span><span style="color:#FFC300">o</span><span style="color:#4696F8">g</span><span style="color:#2CAB4E">l</span><span style="color:#F54231">e</span></label></li>
+                        <li><input hidden="" type="radio" name="type" id="type-cupfox" value="https://www.cupfox.com/search?key=" data-placeholder="电影、剧集、综艺、动漫"><label for="type-cupfox"><span style="color:#b1870b">影视</span></label></li>
+                        <li><input hidden="" type="radio" name="type" id="type-weibo" value="https://www.upyunso.com/search.html?page=1&keyword=" data-placeholder="网盘搜索"><label for="type-weibo"><span style="color:#ff5722">网盘</span></label></li>
+                        <li><input hidden="" type="radio" onclick="if (this.checked){window.location='https://huodong.netlify.app'}" name="type" id="type-quan" value="https://xdeafnn4.jutuike.cn/#/pages/search/search?dsSource=taobao&pub_id=37384&keywords=" data-placeholder="最新官方活动收集，不定时更新ing"><label for="type-quan"><span style="color:#ff5722">搜券</span></label></li>
                     </ul>
                 </div>
             </div>
-            <form action="https://xdeafnn4.jutuike.cn/#/pages/search/search?dsSource=taobao&pub_id=37384&keywords=" method="get" target="_blank" id="super-search-fm">
-                <input type="text" id="search-text" placeholder="🔥输入购物关键字查券" style="outline:0" autocomplete="off">
-                <button  class="submit" type="submit" id="type-sousuo"><svg style="width: 20px; height: 20px; margin:7px 0; color: #29f;" class="icon" aria-hidden="true">
+            <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" id="super-search-fm">
+                <input type="text" id="search-text" placeholder="百度一下" style="outline:0" autocomplete="off">
+                <button class="submit" type="submit" id="type-sousuo"><svg style="width: 20px; height: 20px; margin:7px 0; color: #29f;" class="icon" aria-hidden="true">
                         <use xlink:href="#icon-sousuo"></use>
                     </svg><span></button>
                 <ul id="word" style="display: none;"></ul>
@@ -134,36 +136,154 @@
                 <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
             </div>
         </div>
-        <!--活动列表-->
-        <!--打车-->
+        <!--搜索结束-->
         <ul class="mylist row">
             <li class="title"><svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-qiche"></use>
-                </svg>打车券</li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="didi"  ><a rel="nofollow" href="https://didi.cn/2xdoZ2O?source_id=37384jutuike123456" target="_blank"><svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-didichuxing"></use>
-                </svg><span>滴滴打车券</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="huaxiaozhu"  ><a rel="nofollow" href="https://didi.cn/0x1g807?source_id=37384jutuike123456" target="_blank"><svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-xiaozhu"></use>
-                </svg><span>花小猪打车券</span></a></li>
-                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="gaode" ><a rel="nofollow" href="https://kzurl20.cn/kxsHX" target="_blank"><svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-amap"></use>
-                </svg><span>高德打车券</span></a></li>
-                
+                    <use xlink:href="#icon-hot"></use>
+                </svg>新鲜热榜</li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="weibo" ><a rel="nofollow" href="https://s.weibo.com/top/summary?cate=realtimehot" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg><span>微博热榜</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="douyin" ><a rel="nofollow" href="https://tophub.today/n/DpQvNABoNE" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-douyin"></use>
+                </svg><span>抖音热门视频</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="baidu" ><a rel="nofollow" href="https://top.baidu.com/board?tab=phrase" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-baidu"></use>
+                </svg><span>今日热梗榜</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="douban-hot" ><a rel="nofollow" href="https://tophub.today/n/mDOvnyBoEB" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-douban"></use>
+                </svg><span>豆瓣新片榜</span></a></li>
         </ul>
-        <!--话费-->
+        <!--影视-->
+        <ul class="mylist row">
+            <!------>
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shipin"></use>
+                </svg> 影视娱乐</li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1" id="aiqiyi"><a rel="nofollow" href="https://www.iqiyi.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-aiqiyi"></use>
+                </svg><span>爱奇艺</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1" id="tengxunshipin"><a rel="nofollow" href="https://v.qq.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-tengxunshipin"></use>
+                </svg><span>腾讯视频</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="youku"><a rel="nofollow" href="https://www.youku.com" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-youku"></use>
+                </svg><span>优酷</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1" id="ddys"><a rel="nofollow" href="https://ddys.tv/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ddys"></use>
+                </svg><span>低端影视</span></a></li>
+        <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="chabeihu"><a rel="nofollow" href="https://cupfox.app/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-hulinew"></use>
+                </svg><span>茶杯狐</span></a></li>
+
+        <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="netflix"><a rel="nofollow" href="https://www.nfyingshi.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-netflix"></use>
+                </svg><span>奈非影视</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="libvio"><a rel="nofollow" href="https://www.libvio.me/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-libvio"></use>
+                    </svg><span>Libvio</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="buguTV"><a rel="nofollow" href="https://www.bugutv.net/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-buguTV"></use>
+                    </svg><span>布谷TV</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="bili"><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-bili"></use>
+            </svg><span>哔哩哔哩</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="yinghuadongman"><a rel="nofollow" href="http://www.yinghuacd.com/top/" target="_blank"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-dongman"></use>
+            </svg><span>樱花动漫</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="ikanbot"><a rel="nofollow" href="https://www.ikanbot.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-ikanbot"></use>
+            </svg><span>爱看机器人</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="huiyuan"><a rel="nofollow" href="https://kq-m.dtsoft.cn/#/pages/digital/index?code=vVuUpGkw&showMenu=false" target="_blank"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-huiyuan"></use>
+            </svg><span>会员之家</span></a></li>
+        </ul>
+
+        <!--图书-->
+        <ul class="mylist row">
+            <!------>
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dushu"></use>
+                </svg> 图书阅读</li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="wdxsw"><a rel="nofollow" href="https://sobooks.net/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-wdxsw"></use>
+                </svg><span>我的小书屋</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="jmsoshu"><a rel="nofollow" href="https://www.jiumodiary.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jmsoshu"></use>
+                </svg><span>鸠摩搜书</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="ZLibrary"><a rel="nofollow" href="https://www.ooopn.com/tool/zlibrary/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ZLibrary"></use>
+                </svg><span>ZLibrary</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="baoshuwang"><a rel="nofollow" href="https://www.baoshuxuan.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-baoshuwang"></use>
+                </svg><span>宝书网</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="weixindushu"><a rel="nofollow" href="https://weread.qq.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-weixindushu"></use>
+                </svg><span>微信读书</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"    id="dashumanhua"><a rel="nofollow" href="https://www.dashumanhua.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dashumanhua"></use>
+                </svg><span>大树漫画</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"    id="manhuamao"><a rel="nofollow" href="https://www.soman.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-manhuamao"></use>
+                </svg><span>搜漫</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="zhuanhuan"><a rel="nofollow" href="https://convertio.co/zh/epub-mobi/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zhuanhuan"></use>
+                </svg><span>在线格式转换</span></a></li>
+        </ul>
+
+
+        <!--网盘-->
+        <ul class="mylist row">
+            <!------>
+            <li class="title"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-wangpan"></use>
+                </svg>网盘搜索</li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="upso"><a rel="nofollow" href="https://www.upyunso.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-upso"></use>
+                </svg><span>up云搜</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="daliso"><a rel="nofollow" href="https://dapanso.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-daliso"></use>
+                </svg><span>大力盘</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="dashengso"><a rel="nofollow" href="https://www.dashengpan.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-dashengso"></use>
+                </svg><span>大圣盘搜</span></a></li>
+                <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="jiheso"><a rel="nofollow" href="https://pan.qianfan.app" target="_blank"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jiheso"></use>
+                </svg><span>千帆搜素</span></a></li>
+             
+        </ul>
+        <!--工具-->
         <ul class="mylist row">
             <li class="title"><svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-shoujichongzhi"></use>
-            </svg>话费慢充</li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="mobile"  ><a rel="nofollow" href="https://u.jd.com/5dqXUHg" target="_blank"><svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-mobile"></use>
-            </svg><span>移动95充100</span></a></li>
-            <li class="col-3 col-sm-3 col-md-3 col-lg-1"   id="liantong"  ><a rel="nofollow" href="https://u.jd.com/5Kq4L54" target="_blank"><svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-liantong"></use>
-            </svg><span>联通91充100</span></a></li>
+                    <use xlink:href="#icon-tool"></use>
+                </svg>实用工具</li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="pengyoujizan" ><a rel="nofollow" href="http://pyq.jzzz66.cn/about.html" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-pengyoujizan"></use>
+                    </svg><span>朋友圈集赞神器</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="fanxingzidian" ><a rel="nofollow" href="https://wantwords.net/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-fanxingzidian"></use>
+                    </svg><span>清华反向词典</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="dashengso" ><a rel="nofollow" href="https://jikipedia.com/" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-xiaojizidian"></use>
+                    </svg><span>小鸡词典</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="goupi" ><a rel="nofollow" href="https://suulnnka.github.io/BullshitGenerator/index.html" target="_blank"><svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-goupi"></use>
+                    </svg><span>狗屁不通文章生成器</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="zuoye" ><a rel="nofollow" href="https://jts.egg404.cn/#/" target="_blank"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-zuoye"></use>
+            </svg><span>检讨书生成器</span></a></li>
 
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="youxi" ><a rel="nofollow" href="https://www.yikm.net/" target="_blank"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-youxi"></use>
+            </svg><span>在线小霸王</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="dujitang" ><a rel="nofollow" href="https://dujitang.netlify.app/" target="_blank"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-dujitand"></use>
+            </svg><span>毒鸡汤</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"  id="wodeshangcheng" ><a rel="nofollow" href="https://kzurl13.cn/RSapO" target="_blank"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-wodeshangcheng"></use>
+            </svg><span>啥都有</span></a></li>
 
+        </ul>
         
     </div>
     <!--版权信息开始-->
