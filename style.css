@@ -9,6 +9,13 @@ body{ font-size: 14px; background: #f4f8fb; overflow-x:hidden;  }
 a{text-decoration: none;}
 a:hover{text-decoration: none;}
 svg.icon { width: 14px; height: 14px; margin: 0 5px 0 8px; vertical-align: -0.15em; fill: currentColor; overflow: hidden;}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
 /*menu*/
 .navbar-light .navbar-nav .nav-link{ color: #fff; }
 .navbar-light .navbar-nav .active .nav-link{ color: #fff; }
@@ -77,7 +84,7 @@ svg.icon { width: 14px; height: 14px; margin: 0 5px 0 8px; vertical-align: -0.15
     #he-plugin-simple{ display: none !important; }
     .banner-video video{width:1200px; }
     .banner-video img{width:1200px; }
-    div#navbarsExample05 { background: rgba(0, 0, 0, 0.8); padding: 10px 30px; border-radius: 20px;}
+    /* div#navbarsExample05 { background: rgba(0, 0, 0, 0.8); padding: 10px 30px; border-radius: 20px;} */
 }
 @media screen and (max-width:767px){
     .banner-video video{width:960px; }
